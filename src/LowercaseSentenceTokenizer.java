@@ -43,9 +43,9 @@ public class LowercaseSentenceTokenizer implements Tokenizer {
       tokenList.add(word.substring(0, word.length() - 1)); // Creates substring of word starting from index 0 to the last char of word not inclusive and adds it to the tokenList
 
       tokenList.add("."); // adds the period as a seperate token
+      } else {
+        tokenList.add(word); // adds the word to the tokenList when there isnt a period at the end
       }
-
-      tokenList.add(word); // adds the word to the tokenList when there isnt a period at the end
     }
      return tokenList; // return the tokenList
   }
