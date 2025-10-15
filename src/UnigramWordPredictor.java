@@ -132,7 +132,9 @@ public class UnigramWordPredictor implements WordPredictor {
 
     int randomIndex = random.nextInt(nextWords.size()); // Uses our nextWords list size as a range for our randomly generated index
 
-    return null;
+    String predictedWord = nextWords.get(randomIndex); // Using randomIndex to randomly select a word from nextWords
+
+    return predictedWord; // return the predicted word
   }
   
   /**
